@@ -25,7 +25,8 @@
 
 - Retorna la maginitud de un vector real de dos dimensiones, es decir recibe dos parámetros reales:
 
-  ![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-BONO-PARCIAL/assets/81679109/8aa4223c-b57a-4f9b-908b-5d281907b1db)
+  ![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-BONO-PARCIAL/assets/81679109/11e2629c-2c56-4a0e-b5b4-69abc7cb85d2)
+
 
 
   
