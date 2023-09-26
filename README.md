@@ -59,7 +59,7 @@ Paso a paso
    
    - "localhost:4567/sin/*numero*" (SIN LAS COMILLAS) - Pagina para calcular el seno de *numero* (INTRODUCIR SIN LOS ASTERISCOS).
    - "localhost:4567/cos/*numero*" (SIN LAS COMILLAS) - agina para calcular el coseno de *numero* (INTRODUCIR SIN LOS ASTERISCOS).
-   - "localhost:4567/palindrome*/*cadena*" (SIN LAS COMILLAS) - Pagina para determinar si *cadena* es palindrome o no (INTRODUCIR SIN LOS ASTERISCOS).
+   - "localhost:4567/palindrome/*cadena*" (SIN LAS COMILLAS) - Pagina para determinar si *cadena* es palindrome o no (INTRODUCIR SIN LOS ASTERISCOS).
    - "localhost:4567/magvec/*dimension1*/*dimension2*" (SIN LAS COMILLAS) - Pagina para calcular la magnitud de un vector de dos dimensiones reales, *dimension1* y *dimension2* (INTRODUCIR SIN LOS ASTERISCOS).
    - "localhost:4567/index.html" (SIN LAS COMILLAS) - Pagina con formularios para cada funcion anterior, permitiendo llamados asincronos.
 
