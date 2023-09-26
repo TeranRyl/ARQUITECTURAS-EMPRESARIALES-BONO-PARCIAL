@@ -53,11 +53,7 @@ public class SparkWebServer {
         String response;
         Path rutaIndex = Paths.get("src/main/resources/index.html");
         String leerIndex = Files.readString(rutaIndex);
-        return response = "HTTP/1.1 200 OK\r\n"
-                + "Content-Type: text/html\r\n"
-                + "\r\n"
-                // +"Hola";*/
-                + leerIndex;
+        return response = leerIndex;
     }
 
 
