@@ -13,6 +13,9 @@ A continuacion, dejo respectivas instrucciones para correr el proyecto adecuadam
 
 Para descargar la aplicacion, ya estando aqui, se necesita un equipo de computo con las siguientes caracteristicas:
 
+
+
+
 ```
 - Java 20 instalado (si cuenta con otra version, probablemente deba hacer la respectiva modificacion en el archivo "pom.xml".
 
@@ -27,9 +30,16 @@ Para descargar la aplicacion, ya estando aqui, se necesita un equipo de computo 
 (RECOMENDACION) Tener todo actualizado
 ```
 
+
+
+
 ### Instalando
 
 Paso a paso
+
+
+
+
 
 ```
 1. Descargar el codigo: Bajar el .ZIP correspondiente al repositorio.
@@ -55,6 +65,8 @@ Paso a paso
 
 NOTA: Para abortar el shell con el servidor encendido, podemos presionar "CTRL" + "C".
 ```
+
+
 
 
 ## Evaluacion
@@ -111,6 +123,9 @@ HTML Index.html: Una página web que incluye formularios que permiten a los usua
 JavaScript: Se utiliza para capturar los datos ingresados por el usuario y enviar solicitudes GET al servidor mediante objetos XMLHttpRequest. Las respuestas del servidor se actualizan dinámicamente en la página web, lo que permite a los usuarios ver los resultados de sus solicitudes sin necesidad de recargar la página.
 
 
+
+
+
 ### Generar imagenes para desplegarlo
 
 Sigue estos pasos:
@@ -139,7 +154,13 @@ docker images
 
 Esto mostrará una lista de imágenes Docker en tu sistema, incluida la que acabas de descargar.
 
-1. Ahora que tienes la imagen en tu sistema local, puedes utilizarla para crear y ejecutar contenedores basados en esa imagen utilizando el comando "docker run".
+1. Ahora que tienes la imagen en tu sistema local, puedes utilizarla para crear y ejecutar contenedores basados en esa imagen utilizando el comando
+
+```
+"docker run".
+```
+
+
 
 ### Diagrama de clases
 
