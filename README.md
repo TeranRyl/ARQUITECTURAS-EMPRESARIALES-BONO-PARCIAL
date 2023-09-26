@@ -32,7 +32,6 @@ Para descargar la aplicacion, ya estando aqui, se necesita un equipo de computo 
 
 
 
-
 ### Instalando
 
 Paso a paso
