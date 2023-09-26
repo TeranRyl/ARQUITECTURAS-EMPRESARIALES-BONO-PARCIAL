@@ -23,6 +23,11 @@
 
   ![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-BONO-PARCIAL/assets/81679109/256c971d-d149-4607-afcc-13bcd0ee38fa)
 
+- Retorna la maginitud de un vector real de dos dimensiones, es decir recibe dos parámetros reales:
+
+  ![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-BONO-PARCIAL/assets/81679109/8aa4223c-b57a-4f9b-908b-5d281907b1db)
+
+
   
 
 
