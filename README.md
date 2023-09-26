@@ -102,21 +102,26 @@ Ejemplo de uso de la app web, llamando a sus respectivos servicios REST, ya desp
 
 ## Implementacion
 
-NOTA1
+### Arquitectura
 
-En el backend se utilizo codigo fuente puro Java (sin ningun tipo de framework). Se utilizo JavaScript asincrono como cliente web ejecutado como explorador web.
-Tambien se utilizaron sockets, los cuales tienen la funcion de comunicar dos programas: un cliente y un servidor. El proposito de esto es poder conectarse al servidor web, por lo que el cliente y servidor se conectaron entre si a traves de sus sockets "cliente" (el servidor abre otro socket adicional). Para esto, el cliente debe buscar comunicarse con el servidor especificando la IP destino a la que pretende conectarse, y por cual puerto, mientras que el servidor abre su respectivo puerto.
-Para implementar el servidor web se utilizo HTTP.
-El explorador web se conecto al servidor web por medio de sockets (los cuales utilizan el protocolo TCP -> Orientado a Conexion).
-El flujo es el siguiente: Se abre la conexion TCP -> El explorador web envia solicitud HTTP al servidor -> El servidor responder al explorador web -> Cierre de conexion.
+Clase SparkWebServer: Esta clase principal configura el servidor web utilizando Spark Java. Define las rutas y controladores para manejar las solicitudes entrantes. Proporciona endpoints para calcular seno, coseno, verificar palíndromos y calcular la magnitud de un vector. Además, sirve una página HTML de inicio.
+
+HTML Index.html: Una página web que incluye formularios que permiten a los usuarios ingresar datos y realizar solicitudes a través de llamadas asíncronas a los servicios del servidor. Estos formularios incluyen campos para calcular seno, coseno, verificar palíndromos y calcular la magnitud de un vector.
+
+JavaScript: Se utiliza para capturar los datos ingresados por el usuario y enviar solicitudes GET al servidor mediante objetos XMLHttpRequest. Las respuestas del servidor se actualizan dinámicamente en la página web, lo que permite a los usuarios ver los resultados de sus solicitudes sin necesidad de recargar la página.
 
 
-NOTA 2
+### Generar imagenes para desplegarlo
 
 El explorador pide y ejecuta lo que el servidor web le envie, y luego el servidor devuelve el resultado (paginas html, archivos css y js e imagenes jpg).
 Para esta conversion, se tiene en cuenta el encabezado del archivo y se devuelve en bytes. Este proceso varia segun el tipo de contenido.
 App permite crear una aplicacion de backend, la cual estara en el servidor web, y funciona como un framework IoC para la construccion aplicaciones, derivando en una webapp a partir de un POJO cargado. Para esto se explora el directorio raiz para buscar aquellas clases marcadas con la anotacion @component (la cual indica que son componentes-beans) y cargarlas, de tal manera que cuando se invoca el framework este sepa el path de las clases que necesita. En el POJO se especifica cual servicio retornar segun la URI que se indique, atendiendo con la anotacion @GetMapping.
 Se hace uso del patron de diseño SINGLETON, para instanciar por unica vez "HttpServer".
+
+### Diagrama de clases
+
+![image](https://github.com/TeranRyl/ARQUITECTURAS-EMPRESARIALES-BONO-PARCIAL/assets/81679109/54dded83-6ad7-40d7-a12d-94a5ab021638)
+
 
 
 
