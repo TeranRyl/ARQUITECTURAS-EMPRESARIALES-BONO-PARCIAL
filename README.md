@@ -113,10 +113,33 @@ JavaScript: Se utiliza para capturar los datos ingresados por el usuario y envia
 
 ### Generar imagenes para desplegarlo
 
-El explorador pide y ejecuta lo que el servidor web le envie, y luego el servidor devuelve el resultado (paginas html, archivos css y js e imagenes jpg).
-Para esta conversion, se tiene en cuenta el encabezado del archivo y se devuelve en bytes. Este proceso varia segun el tipo de contenido.
-App permite crear una aplicacion de backend, la cual estara en el servidor web, y funciona como un framework IoC para la construccion aplicaciones, derivando en una webapp a partir de un POJO cargado. Para esto se explora el directorio raiz para buscar aquellas clases marcadas con la anotacion @component (la cual indica que son componentes-beans) y cargarlas, de tal manera que cuando se invoca el framework este sepa el path de las clases que necesita. En el POJO se especifica cual servicio retornar segun la URI que se indique, atendiendo con la anotacion @GetMapping.
-Se hace uso del patron de diseño SINGLETON, para instanciar por unica vez "HttpServer".
+Sigue estos pasos:
+
+1. Abre una terminal en tu sistema.
+
+2. Ejecuta el siguiente comando para descargar una imagen de Docker desde el registro (en este caso, Docker Hub):
+
+```
+docker pull nombre_de_la_imagen:etiqueta
+```
+
+Reemplaza *nombre_de_la_imagen* con el nombre de la imagen que deseas descargar y etiqueta con la etiqueta específica de la versión que deseas. Por ejemplo, si deseas descargar la imagen oficial de Ubuntu 20.04, puedes hacerlo de la siguiente manera:
+
+```
+docker pull ubuntu:20.04
+```
+
+1. Docker descargará la imagen especificada desde el registro de contenedores y la almacenará en tu sistema local.
+
+2. Una vez que la descarga esté completa, puedes verificar que la imagen se haya descargado correctamente ejecutando:
+
+```
+docker images
+```
+
+Esto mostrará una lista de imágenes Docker en tu sistema, incluida la que acabas de descargar.
+
+1. Ahora que tienes la imagen en tu sistema local, puedes utilizarla para crear y ejecutar contenedores basados en esa imagen utilizando el comando "docker run".
 
 ### Diagrama de clases
 
