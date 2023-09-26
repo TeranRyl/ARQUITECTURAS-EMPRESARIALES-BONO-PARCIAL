@@ -59,7 +59,7 @@ NOTA: Para abortar el shell con el servidor encendido, podemos presionar "CTRL" 
 
 ## Evaluacion
 
-Ejemplo de uso de la app web, llamando a sus respectivos servicios REST:
+Ejemplo de uso de la app web, llamando a sus respectivos servicios REST, ya desplegada:
 
 
 - Sin:
