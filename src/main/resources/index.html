@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=\"UTF-8\">
+    <title>Index</title>
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+</head>
+<body>
+<h1> FUNCTION FORMS </h1>
+<form action="/sin">
+    <label for="sin">Numero al cual calcular su seno:":</label><br>
+    <input type="text" id="sin" name="sin" value="3"><br><br>
+    <input type="button" value="Enviar" onclick="loadGetMsgSin()">
+</form>
+<form action="/cos">
+    <label for="cos">Numero al cual calcular su coseno:":</label><br>
+    <input type="text" id="cos" name="cos" value="3"><br><br>
+    <input type="button" value="Enviar" onclick="loadGetMsgCos()">
+</form>
+<form action="/palindrome">
+    <label for="palindrome">Cadena a la cual determinar si es palindrome:":</label><br>
+    <input type="text" id="palindrome" name="pal" value="3"><br><br>
+    <input type="button" value="Enviar" onclick="loadGetMsgPal()">
+</form>
+<form action="/magvec">
+    <label for="magvec1">Vector al cual calcular su magnitud:":</label><br>
+    <input type="text" id="magvec1" name="magvec1" value="3"><br><br>
+    <input type="text" id="magvec2" name="magvec2" value="5"><br><br>
+    <input type="button" value="Enviar" onclick="loadGetMsgMagVec()">
+</form>
+<div id="getrespmsg"></div>
+<script>
+
+function loadGetMsgSin() {
+let nameVar = document.getElementById("sin").value;
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+document.getElementById("getrespmsg").innerHTML =
+this.responseText;
+}
+xhttp.open("GET", "/sin/"+nameVar);
+xhttp.send();
+}
+
+function loadGetMsgCos() {
+let nameVar = document.getElementById("cos").value;
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+document.getElementById("getrespmsg").innerHTML =
+this.responseText;
+}
+xhttp.open("GET", "/cos/"+nameVar);
+xhttp.send();
+}
+
+function loadGetMsgPal() {
+let nameVar = document.getElementById("palindrome").value;
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+document.getElementById("getrespmsg").innerHTML =
+this.responseText;
+}
+xhttp.open("GET", "/palindrome/"+nameVar);
+xhttp.send();
+}
+
+function loadGetMsgMagVec() {
+let nameVar1 = document.getElementById("magvec1").value;
+let nameVar2 = document.getElementById("magvec2").value;
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+document.getElementById("getrespmsg").innerHTML =
+this.responseText;
+}
+xhttp.open("GET", "/magvec/"+nameVar1+"/"+nameVar2);
+xhttp.send();
+}
+
+</script>
+</body>
+</html>
